@@ -102,7 +102,7 @@ public class PdfCreatorActivity extends PDFCreatorActivity {
         PDFBody pdfBody = new PDFBody();
 
         PDFTextView pdfCompanyNameView = new PDFTextView(getApplicationContext(), PDFTextView.PDF_TEXT_SIZE.H3);
-        pdfCompanyNameView.setText("Company Name");
+        pdfCompanyNameView.setText(getApplicationContext().getResources().getString(R.string.test_content));
         pdfBody.addView(pdfCompanyNameView);
         PDFLineSeparatorView lineSeparatorView1 = new PDFLineSeparatorView(getApplicationContext()).setBackgroundColor(Color.WHITE);
         pdfBody.addView(lineSeparatorView1);
